@@ -89,7 +89,7 @@ async function postFuncionario(req, res) {
 
 async function putFuncionario(req, res) {
     const conn = await connect();
-    let id = req.params.id; // ID do funcionário a ser atualizado
+    let id = req.params.id; 
     const { nome, data_admissao, cod_cargo, cod_setor } = req.body;
 
     const result = await conn.query(
